@@ -1,0 +1,25 @@
+.agendamentos-container {
+    background-color: #f0f8ff;
+    color: #000;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .agendamentos-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .agendamentos-table th,
+  .agendamentos-table td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .agendamentos-table th {
+    background-color: #b0e0e6;
+  }
+  
