@@ -5,6 +5,7 @@ function PasswordProtected() {
   const [password, setPassword] = useState('');
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [error, setError] = useState('');
+  var senha = Environment.get("PASSWORD");
 
   const handleChange = (e) => {
     setPassword(e.target.value);
@@ -12,7 +13,7 @@ function PasswordProtected() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const storedPassword = '12345';
+    const storedPassword = senha;
     if (password === storedPassword) {
       setIsAuthenticated(true);
     } else {
