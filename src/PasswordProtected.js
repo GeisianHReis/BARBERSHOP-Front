@@ -5,7 +5,7 @@ function PasswordProtected() {
   const [password, setPassword] = useState('');
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [error, setError] = useState('');
-  var senha = Environment.get("PASSWORD");
+  const senha = process.env.REACT_APP_PASSWORD;
 
   const handleChange = (e) => {
     setPassword(e.target.value);
